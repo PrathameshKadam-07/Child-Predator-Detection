@@ -9,14 +9,14 @@ Usage:
 """
 
 import praw
-from keyword_sentiment_analysis import analyze_sentiment
+from analysis import analyze_sentiment  # Sentiment engine from analysis.py
 
-# Replace these with your Reddit app credentials
+# Reddit API credentials (replace with your own)
 REDDIT_CLIENT_ID = "YOUR_CLIENT_ID"
 REDDIT_CLIENT_SECRET = "YOUR_CLIENT_SECRET"
 REDDIT_USER_AGENT = "ChildPredatorDetectionBot/0.1 by YOUR_USERNAME"
 
-# List of subreddits to monitor
+# Subreddits to monitor (you can add more)
 SUBREDDITS_TO_MONITOR = "teenagers+AskTeenGirls+AskTeenBoys"
 SENTIMENT_TO_FLAG = "negative"
 
@@ -29,7 +29,7 @@ reddit = praw.Reddit(
 subreddit = reddit.subreddit(SUBREDDITS_TO_MONITOR)
 
 def monitor_comments():
-    print(f"🚨 Monitoring comments in r/{SUBREDDITS_TO_MONITOR}...")
+    print(f"🚨 Monitoring comments in r/{SUBREDDITS_TO_MONITOR}...\n")
     try:
         for comment in subreddit.stream.comments(skip_existing=True):
             if comment.author is None:
@@ -38,11 +38,12 @@ def monitor_comments():
             result = analyze_sentiment(comment.body)
 
             if result["sentiment"] == SENTIMENT_TO_FLAG:
-                print("\n⚠️ Suspicious Comment Detected")
+                print("⚠️  Suspicious Comment Detected")
                 print(f"👤 Author: u/{comment.author}")
                 print(f"💬 Comment: {comment.body}")
                 print(f"📊 Analysis: {result}")
-                print(f"🔗 Link: https://www.reddit.com{comment.permalink}")
+                print(f"🔗 Link: https://reddit.com{comment.permalink}")
+                print("-" * 80)
     except KeyboardInterrupt:
         print("\n🛑 Monitoring stopped by user.")
     except Exception as e:
