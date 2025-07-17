@@ -88,10 +88,8 @@ Collect your:
 
 Install the required library:
 
-```json
-{
+```bash
 pip install praw
-}
 ```
 
 ✅ How to Run
@@ -99,21 +97,18 @@ pip install praw
 2)Ensure analysis.py exists and contains the analyze_sentiment function.
 
 Run the monitor:
-```json
-{
+
+```bash
 python reddit_monitor.py
-}
 ```
 
 📊 Example Output
-```json
-{
+```bash
 ⚠️  Suspicious Comment Detected
 👤 Author: u/someuser123
 💬 Comment: "Hey cutie, wanna play a game? Send me a pic 😉"
 📊 Analysis: {'sentiment': 'negative', 'score': -3.4, 'matched_keywords': ['cutie', 'send me a pic']}
 🔗 Link: https://reddit.com/r/teenagers/comments/abc123/comment/xyz456
-}
 ```
 ---
 ## 📅 Roadmap
