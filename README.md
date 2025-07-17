@@ -116,12 +116,14 @@ python reddit_monitor.py
 
 ## 📊 Example Output
 
-```bash
+```json
+{
 ⚠️  Suspicious Comment Detected
 👤 Author: u/someuser123
 💬 Comment: "Hey cutie, wanna play a game? Send me a pic 😉"
 📊 Analysis: {'sentiment': 'negative', 'score': -3.4, 'matched_keywords': ['cutie', 'send me a pic']}
 🔗 Link: https://reddit.com/r/teenagers/comments/abc123/comment/xyz456
+}
 ```
 
 ---
