@@ -114,7 +114,8 @@ python reddit_monitor.py
 📊 Analysis: {'sentiment': 'negative', 'score': -3.4, 'matched_keywords': ['cutie', 'send me a pic']}
 🔗 Link: https://reddit.com/r/teenagers/comments/abc123/comment/xyz456
 }
-
+```
+---
 ## 📅 Roadmap
 
 * [x] Keyword-driven sentiment detection
