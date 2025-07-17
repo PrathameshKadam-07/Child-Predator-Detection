@@ -74,7 +74,7 @@ The engine scans for:
 ## 📅 Roadmap
 
 * [x] Keyword-driven sentiment detection
-* [ ] Reddit API integration
+* [X] Reddit API integration
 * [ ] Suspicious account flagging
 * [ ] OSINT automation for flagged accounts
 * [ ] Reporting pipeline to legal authorities/NGOs
