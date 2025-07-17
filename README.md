@@ -89,7 +89,7 @@ Online predators often use a pattern of emotionally manipulative and evasive lan
 
 ## 💼 Disclaimer
 
-This project is for **educational and research purposes only**. We strongly discourage vigilante behavior. Any findings should be responsibly reported to appropriate child protection or law enforcement agencies.
+This project is for **educational and research purposes only**. We strongly discourage vigilante behavior. Any findings should be responsibly reported to appropriate child protection or law enforcement agencies.This integration processes only public data. Do not engage in unauthorized surveillance or misuse.
 
 ---
 
@@ -115,6 +115,7 @@ This work is inspired by the ongoing efforts of cybersecurity professionals, chi
 ```
 .
 ├── keyword_sentiment_analysis.py
+├── reddit_monitor.py
 ├── keywords.json
 ├── README.md
 ```
