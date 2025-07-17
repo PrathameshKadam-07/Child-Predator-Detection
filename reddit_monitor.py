@@ -2,14 +2,14 @@
 Reddit Monitoring Module
 
 Streams Reddit comments from selected subreddits and flags harmful or grooming content
-using the analysis.py engine.
+using the keyword_sentiment_analysis.py engine.
 
 Usage:
     python reddit_monitor.py
 """
 
 import praw
-from analysis import analyze_sentiment  
+from keyword_sentiment_analysis import analyze_sentiment
 
 # Replace these with your Reddit app credentials
 REDDIT_CLIENT_ID = "YOUR_CLIENT_ID"
