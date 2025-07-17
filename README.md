@@ -69,18 +69,18 @@ The engine scans for:
 }
 ```
 
-##🔗 Reddit API Integration (Live Monitoring)
+## 🔗 Reddit API Integration (Live Monitoring)
 ---
 This module connects to Reddit using the PRAW (Python Reddit API Wrapper) library. It streams real-time public comments from selected subreddits and uses our custom sentiment analysis engine to flag potentially harmful content.
 ---
-##🎯 Objective
+## 🎯 Objective
 ---
 * Monitor Reddit comments in sensitive subreddits.
 * Analyze each comment using the analysis.py sentiment engine.
 * Flag and log messages with grooming, bullying, or predatory intent.
 * Display author, comment, sentiment score, and permalink.
 ---
-##🧰 Requirements
+## 🧰 Requirements
 ---
 Create a Reddit app at https://www.reddit.com/prefs/apps
 
@@ -95,7 +95,7 @@ Install the required library:
 pip install praw
 ```
 ---
-##✅ How to Run
+## ✅ How to Run
 ---
 1) Add your Reddit credentials in reddit_monitor.py.
 2)Ensure analysis.py exists and contains the analyze_sentiment function.
@@ -106,7 +106,7 @@ Run the monitor:
 python reddit_monitor.py
 ```
 ---
-##📊 Example Output
+## 📊 Example Output
 ---
 ```bash
 ⚠️  Suspicious Comment Detected
